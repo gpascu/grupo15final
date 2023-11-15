@@ -1,0 +1,144 @@
+@import "./principal.css";
+
+/* Estilos Default */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Aplico color del bg y tipo fuente */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizo el header */
+/* h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+} */
+
+/* Doy estilo al container */
+/*form de registración*/
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 0 rgba(72, 72, 72, 0.7);
+}
+
+/* Estilo de elementos del form */
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* Hover en el botón */
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo inputs del form*/
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form select {
+    width: 100%;
+    
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Bordes y foco */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #3498db;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo a label*/
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Para los espacios entre elementos*/
+form p {
+    margin-bottom: 10px;
+}
+
+/* Centrar el form*/
+form {
+    text-align: center;
+}
+
+/* Animacion para el contenedor del form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animacion del fade */
+form {
+    animation: fadeIn 0.5s;    
+}
+
+
+form p 
+{
+    display: flex;
+    flex-direction: column;
+}
+form p label
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1ch;
+    color: black;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form select 
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #4CAF50;color: white;padding: 10px 15px;border: none; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+
+.disabled{
+    background: #ccc;
+}

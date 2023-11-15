@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Registro{% endblock%}
+
+{% load static %}
+
+{% block class %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/registracion.css' %}">
+{% endblock %}
+
+{% block encabezado %}
+<h1 style="font-size: 8vh;">Registraciòn de cuenta</h1>
+<p class="menuSuperior">¿Ya tenès una cuenta? <a href="/login/" style="color: coral;">Ingresar aquì</a>.</p>
+{% endblock %}
+
+{% block contenido %}
+<main>
+    <form class="form2" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div>
+            <button type="submit">
+            Registrarme
+            </button>
+        </div>
+    </form>
+</main>
+<br>
+<br>
+<br>
+<script src="{% static 'js/menu.js' %}"></script>
+{% endblock %}
